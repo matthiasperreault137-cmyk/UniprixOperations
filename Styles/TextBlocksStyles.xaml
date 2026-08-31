@@ -1,0 +1,157 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--Page titles-->
+    <Style x:Key="PageTitle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Montserrat"/>
+        <Setter Property="FontSize" Value="40"/>
+        <Setter Property="FontWeight" Value="ExtraBold"/>
+        <Setter Property="Foreground" Value="#000000"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="LineHeight" Value="48"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <!-- Subtitles -->
+    <Style x:Key="Subtitle1" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Montserrat"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="#000000"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="LineHeight" Value="36"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="Subtitle2" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Montserrat"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="#000000"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="LineHeight" Value="36"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+    </Style>
+
+    <!-- Description Titles-->
+    <Style x:Key="Description1" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Montserrat"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Foreground" Value="#000000"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="LineHeight" Value="26"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+    </Style>
+    
+    <!--Input Fields-->
+    <!-- Label above a field -->
+        <Style x:Key="FieldLabel" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5,5,5,3"/>
+        </Style>
+
+        <!-- Large title label (Nom de la tâche, Description) -->
+        <Style x:Key="FieldLabelLarge" TargetType="TextBlock"
+           BasedOn="{StaticResource FieldLabel}">
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="30"/>
+        </Style>
+
+        <!-- Medium label (Date, Heure) -->
+        <Style x:Key="FieldLabelMedium" TargetType="TextBlock"
+           BasedOn="{StaticResource FieldLabel}">
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="25"/>
+        </Style>
+    
+        <!-- Small label-->
+        <Style x:Key="FieldLabelSmall" TargetType="TextBlock"
+           BasedOn="{StaticResource FieldLabel}">
+        <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="15"/>
+        </Style>
+        <!-- Standard single-line input -->
+        <Style x:Key="InputField" TargetType="TextBox">
+            <Setter Property="Margin" Value="5,0"/>
+            <Setter Property="Height" Value="42"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Padding" Value="8,0"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <!-- Multiline description input -->
+        <Style x:Key="InputFieldMultiline" TargetType="TextBox"
+           BasedOn="{StaticResource InputField}">
+            <Setter Property="Height" Value="160"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="AcceptsReturn" Value="True"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+            <Setter Property="Padding" Value="8,6"/>
+        </Style>
+
+    <!-- Horizontal divider -->
+    <Style x:Key="DividerHorizontal" TargetType="Border">
+        <Setter Property="BorderThickness" Value="0,1,0,0"/>
+        <Setter Property="Margin" Value="10,8"/>
+    </Style>
+
+    <!-- Vertical divider -->
+    <Style x:Key="DividerVertical" TargetType="Border">
+        <Setter Property="BorderThickness" Value="1,0,0,0"/>
+        <Setter Property="Margin" Value="0,10"/>
+    </Style>
+    
+    
+    
+    <!-- Message -->
+    <Style x:Key="MessageBorderStyle" TargetType="Border">
+        <Setter Property="Background" Value="#FFFAF7"/>
+        <Setter Property="BorderBrush" Value="#F97316"/>
+        <Setter Property="BorderThickness" Value="3,0,0,0"/>
+        <Setter Property="CornerRadius" Value="6"/>
+        <Setter Property="Padding" Value="12,10,12,10"/>
+        <Setter Property="Margin" Value="0,0,0,8"/>
+    </Style>
+
+    <Style x:Key="MessageSenderStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Foreground" Value="#F97316"/>
+    </Style>
+
+    <Style x:Key="MessageDateStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="11"/>
+        <Setter Property="Foreground" Value="#777777"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="MessageContentStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="Foreground" Value="#3D1F0A"/>
+        <Setter Property="Margin" Value="0,6,0,0"/>
+    </Style>
+
+    <Style x:Key="MessageDeleteButtonStyle" TargetType="Button">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Width" Value="24"/>
+        <Setter Property="Height" Value="24"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="Margin" Value="8,0,0,0"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Opacity" Value="0.4"/>
+    </Style>
+
+</ResourceDictionary>

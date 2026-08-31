@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<IdCounters>
+	<SectionIdCounter>
+		50
+	</SectionIdCounter>
+	<ProductIdCounter>
+		50
+	</ProductIdCounter>
+	<DailyTasksIdCounter>
+		50
+	</DailyTasksIdCounter>
+	<RecurringTasksIdCounter>
+		50
+	</RecurringTasksIdCounter>
+	<UserIdCounter>
+		50
+	</UserIdCounter>
+</IdCounters>

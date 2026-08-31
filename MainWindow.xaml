@@ -1,0 +1,41 @@
+﻿<Window x:Class="UniprixOperations.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniprixOperations"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        Title="MainWindow" Height="450" Width="800"
+        Icon="pack://application:,,,/Images/UniprixOperationsIcon.ico">    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="White" BorderBrush="Black" BorderThickness="0,0,0,2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="118*"/>
+                    <ColumnDefinition Width="225*"/>
+                    <ColumnDefinition Width="115"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="pack://application:,,,/Images/Icon.png" Width="60" HorizontalAlignment="Left"></Image>
+                <TextBlock Grid.Column="0" Margin="70,0,0,0" FontSize="45" TextAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Left"> Uniprix Operations</TextBlock>
+                <Image Grid.Column="2" Source="pack://application:,,,/Images/refresh.png" MouseLeftButtonUp="RefreshPage" MouseEnter="RefreshMouseEnter" MouseLeave="RefreshMouseLeave" Margin="47,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            </Grid>
+        </Border>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1">
+
+        </Frame>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Style="{StaticResource LogoutButton}" Width="176" HorizontalAlignment="Left" Click="openAccountSelection" Margin="10,10,0,10">Déconnexion</Button>
+            <TextBlock x:Name="MWCurrentUser" Grid.Column="2" Text="Non connecté / Disconnected" HorizontalAlignment="Right" FontSize="20" VerticalAlignment="Center" Margin="0,0,40,0"></TextBlock>
+        </Grid>
+    </Grid>
+</Window>

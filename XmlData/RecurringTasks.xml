@@ -1,0 +1,380 @@
+﻿<RecurringTasks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<RecurringTask>
+		<Name>Over section 1</Name>
+		<Description>Placer les produits en trop de la section 1 sur le plancher</Description>
+		<CreationDate>2025-11-14T00:00:00</CreationDate>
+		<CompletionDate xsi:nil="true"/>
+		<VisibilityLevel>2</VisibilityLevel>
+		<Id>0</Id>
+		<Recurrence>4</Recurrence>
+		<SubTask>
+			<Name>Section 1 Tablette C</Name>
+			<Description>Placer les produits en trop de la tablette C sur le plancher</Description>
+			<CreationDate>2025-11-14T00:00:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>0</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 1 Tablette B</Name>
+			<Description>Placer les produits en trop de la tablette B sur le plancher</Description>
+			<CreationDate>2025-11-14T00:00:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>0</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 1 Tablette E</Name>
+			<Description>Placer les produits en trop de la tablette E sur le plancher</Description>
+			<CreationDate>2025-11-14T00:00:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>0</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 1 Tablette A</Name>
+			<Description>Placer les produits en trop de la tablette A sur le plancher</Description>
+			<CreationDate>2026-05-31T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>0</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 1 Tablette F</Name>
+			<Description>Placer les produits en trop de la tablette F sur le plancher</Description>
+			<CreationDate>2026-05-31T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>0</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 1 Tablette G</Name>
+			<Description>Placer les produits en trop de la tablette G sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>0</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 1 Tablette D</Name>
+			<Description>Placer les produits en trop de la tablette D sur le plancher</Description>
+			<CreationDate>2026-06-02T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>0</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+	</RecurringTask>
+	<RecurringTask>
+		<Name>Over section 5</Name>
+		<Description>Placer les produits en trop de la section 5 sur le plancher</Description>
+		<CreationDate>2026-02-17T00:00:00</CreationDate>
+		<CompletionDate xsi:nil="true"/>
+		<VisibilityLevel>2</VisibilityLevel>
+		<Id>1</Id>
+		<Recurrence>4</Recurrence>
+		<SubTask>
+			<Name>Section 5 Tablette C</Name>
+			<Description>Placer les produits en trop de la tablette C sur le plancher</Description>
+			<CreationDate>2026-02-17T00:00:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>1</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 5 Tablette E</Name>
+			<Description>Placer les produits en trop de la tablette E sur le plancher</Description>
+			<CreationDate>2026-05-31T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>1</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 5 Tablette G</Name>
+			<Description>Placer les produits en trop de la tablette G sur le plancher</Description>
+			<CreationDate>2026-05-31T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>1</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 5 Tablette D</Name>
+			<Description>Placer les produits en trop de la tablette D sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>1</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 5 Tablette H</Name>
+			<Description>Placer les produits en trop de la tablette H sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>1</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 5 Tablette A</Name>
+			<Description>Placer les produits en trop de la tablette A sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>1</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 5 Tablette B</Name>
+			<Description>Placer les produits en trop de la tablette B sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>1</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 5 Tablette F</Name>
+			<Description>Placer les produits en trop de la tablette F sur le plancher</Description>
+			<CreationDate>2026-06-02T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>1</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+	</RecurringTask>
+	<RecurringTask>
+		<Name>Over section 4</Name>
+		<Description>Placer les produits en trop de la section 2 sur le plancher</Description>
+		<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+		<CompletionDate xsi:nil="true"/>
+		<VisibilityLevel>2</VisibilityLevel>
+		<Id>2</Id>
+		<Recurrence>4</Recurrence>
+		<SubTask>
+			<Name>Section 4 Tablette A</Name>
+			<Description>Placer les produits en trop de la tablette A sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>2</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 4 Tablette B</Name>
+			<Description>Placer les produits en trop de la tablette B sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>2</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 4 Tablette F</Name>
+			<Description>Placer les produits en trop de la tablette F sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>2</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 4 Tablette C</Name>
+			<Description>Placer les produits en trop de la tablette C sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>2</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 4 Tablette D</Name>
+			<Description>Placer les produits en trop de la tablette D sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>2</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 4 Tablette H</Name>
+			<Description>Placer les produits en trop de la tablette H sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>2</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 4 Tablette E</Name>
+			<Description>Placer les produits en trop de la tablette E sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>2</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 4 Tablette G</Name>
+			<Description>Placer les produits en trop de la tablette G sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>2</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+	</RecurringTask>
+	<RecurringTask>
+		<Name>Over section 2</Name>
+		<Description>Placer les produits en trop de la section 2 sur le plancher</Description>
+		<CreationDate>2025-11-14T00:00:00</CreationDate>
+		<CompletionDate xsi:nil="true"/>
+		<VisibilityLevel>2</VisibilityLevel>
+		<Id>3</Id>
+		<Recurrence>4</Recurrence>
+		<SubTask>
+			<Name>Section 2 Tablette C</Name>
+			<Description>Placer les produits en trop de la tablette C sur le plancher</Description>
+			<CreationDate>2025-11-14T00:00:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>3</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 2 Tablette B</Name>
+			<Description>Placer les produits en trop de la tablette B sur le plancher</Description>
+			<CreationDate>2025-11-14T00:00:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>3</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 2 Tablette E</Name>
+			<Description>Placer les produits en trop de la tablette E sur le plancher</Description>
+			<CreationDate>2025-11-14T00:00:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>3</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 2 Tablette A</Name>
+			<Description>Placer les produits en trop de la tablette A sur le plancher</Description>
+			<CreationDate>2026-05-31T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>3</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 2 Tablette F</Name>
+			<Description>Placer les produits en trop de la tablette F sur le plancher</Description>
+			<CreationDate>2026-05-31T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>3</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 2 Tablette G</Name>
+			<Description>Placer les produits en trop de la tablette G sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>3</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 2 Tablette D</Name>
+			<Description>Placer les produits en trop de la tablette D sur le plancher</Description>
+			<CreationDate>2026-06-02T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>3</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+	</RecurringTask>
+	<RecurringTask>
+		<Name>Over section 3</Name>
+		<Description>Placer les produits en trop de la section 3 sur le plancher</Description>
+		<CreationDate>2025-11-14T00:00:00</CreationDate>
+		<CompletionDate xsi:nil="true"/>
+		<VisibilityLevel>2</VisibilityLevel>
+		<Id>4</Id>
+		<Recurrence>4</Recurrence>
+		<SubTask>
+			<Name>Section 3 Tablette C</Name>
+			<Description>Placer les produits en trop de la tablette C sur le plancher</Description>
+			<CreationDate>2025-11-14T00:00:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>4</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 3 Tablette B</Name>
+			<Description>Placer les produits en trop de la tablette B sur le plancher</Description>
+			<CreationDate>2025-11-14T00:00:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>4</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 3 Tablette E</Name>
+			<Description>Placer les produits en trop de la tablette E sur le plancher</Description>
+			<CreationDate>2025-11-14T00:00:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>4</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 3 Tablette A</Name>
+			<Description>Placer les produits en trop de la tablette A sur le plancher</Description>
+			<CreationDate>2026-05-31T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>4</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 3 Tablette F</Name>
+			<Description>Placer les produits en trop de la tablette F sur le plancher</Description>
+			<CreationDate>2026-05-31T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>4</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 3 Tablette G</Name>
+			<Description>Placer les produits en trop de la tablette G sur le plancher</Description>
+			<CreationDate>2026-06-01T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>4</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+		<SubTask>
+			<Name>Section 3 Tablette D</Name>
+			<Description>Placer les produits en trop de la tablette D sur le plancher</Description>
+			<CreationDate>2026-06-02T00:00:00-04:00</CreationDate>
+			<CompletionDate xsi:nil="true"/>
+			<VisibilityLevel>2</VisibilityLevel>
+			<ParentTask>4</ParentTask>
+			<Recurrence>4</Recurrence>
+		</SubTask>
+	</RecurringTask>
+</RecurringTasks>	

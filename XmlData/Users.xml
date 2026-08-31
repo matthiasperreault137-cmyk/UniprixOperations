@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<User xsi:type="Manager">
+		<Id>0</Id>
+		<Name>Admin1</Name>
+		<PassWord>137</PassWord>
+	</User>
+</Users>

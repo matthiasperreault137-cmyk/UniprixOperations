@@ -1,0 +1,162 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>UniprixOperationsIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="EmployeeIcon.png" />
+    <None Remove="Images\AddDailyTask.png" />
+    <None Remove="Images\AddProduct1.png" />
+    <None Remove="Images\AddProduct2.png" />
+    <None Remove="Images\AddRecurringTask.png" />
+    <None Remove="Images\AddSection.png" />
+    <None Remove="Images\AddUser.png" />
+    <None Remove="Images\AllProducts.png" />
+    <None Remove="Images\DailyTask.png" />
+    <None Remove="Images\ExpiryMenu.png" />
+    <None Remove="Images\Icon.png" />
+    <None Remove="Images\ManagerDailyTasks.png" />
+    <None Remove="Images\ManagerExpireMenu.png" />
+    <None Remove="Images\ManagerRecurringTasks.png" />
+    <None Remove="Images\ManagerTasks.png" />
+    <None Remove="Images\Messages.png" />
+    <None Remove="Images\ProductSections.png" />
+    <None Remove="Images\RecurringTask.png" />
+    <None Remove="Images\refresh.png" />
+    <None Remove="Images\Sections.png" />
+    <None Remove="Images\TaskHistory.png" />
+    <None Remove="Images\Tasks.png" />
+    <None Remove="Images\UniprixOperationsIcon.ico" />
+    <None Remove="Images\UserList.png" />
+    <None Remove="Images\Users.png" />
+    <None Remove="ManagerIcon.png" />
+    <None Remove="XmlData\DailyTasks.xml" />
+    <None Remove="XmlData\ExpiredProducts.xml" />
+    <None Remove="XmlData\IdCounters.xml" />
+    <None Remove="XmlData\Messages.xml" />
+    <None Remove="XmlData\RecurringTasks.xml" />
+    <None Remove="XmlData\Sections.xml" />
+    <None Remove="XmlData\TaskHistory.xml" />
+    <None Remove="XmlData\Users.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="UniprixOperationsIcon.ico" />
+    <Content Include="XmlData\DailyTasks.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlData\ExpiredProducts.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlData\IdCounters.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlData\Messages.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlData\RecurringTasks.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlData\Sections.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XmlData\Users.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\AddDailyTask.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\AddProduct1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\AddProduct2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\AddRecurringTask.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\AddSection.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\AddUser.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\AllProducts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\DailyTask.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\EmployeeIcon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ExpiryMenu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Icon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ManagerDailyTasks.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ManagerExpireMenu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ManagerIcon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ManagerRecurringTasks.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ManagerTasks.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Messages.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ProductSections.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\RecurringTask.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\refresh.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Sections.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\TaskHistory.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Tasks.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\UniprixOperationsIcon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\UserList.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Users.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="XmlData\TaskHistory.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CommonPages\" />
+    <Folder Include="PageData\CommonData\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,51 @@
+﻿<Page x:Class="UniprixOperations.ManagerPages.ManagerLogin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UniprixOperations.ManagerPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ManagerLogin">
+
+    <Border Grid.Row="1" Padding="100,30">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Image Source="pack://application:,,,/Images/ManagerIcon.png" ></Image>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <TextBlock TextAlignment="Center" Foreground="#FFF4793E" FontSize="15" VerticalAlignment="Center"> Administration Et Gestion </TextBlock>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <ComboBox x:Name="ManagerComboBox" Grid.Row="0" Style="{StaticResource ManagerComboBox}" Height="40" Width ="200" Margin="5,5,5,5">
+                    </ComboBox>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Style="{StaticResource FieldLabelLarge}" >Mot de passe :</TextBlock>
+                        <TextBox x:Name="PasswordTextBox" Grid.Column="1" Style="{StaticResource InputField}" KeyDown="EnterKeyDown" ></TextBox>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Button Style="{StaticResource ManagerContinueButton }" Click="ConnectUser">Se Connecter</Button>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Page>

@@ -1,0 +1,130 @@
+﻿<Page x:Class="UniprixOperations.EmployeePages.EmployeeAddExpiredProduct"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UniprixOperations.EmployeePages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EmployeeAddExpiredProduct">
+
+    <Grid Grid.Row="1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Background="White">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Button Style="{StaticResource EmployeeUnselectedTab}" Click="OpenMainMenu">Accueil</Button>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Button Style="{StaticResource EmployeeUnselectedTab}" Click="OpenTasks">Tâches</Button>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Button Style="{StaticResource EmployeeSelectedTab}" Click="OpenExpiredProducts">Expirations</Button>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock Style="{StaticResource PageTitle}"> Ajouter Un Produit Expiré</TextBlock>
+            </Grid>
+            <Border Grid.Row="1" Padding="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="1.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="5*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Style="{StaticResource Subtitle1}"> Sélectionner la rangée</TextBlock>
+                        <ScrollViewer Grid.Row="1">
+                            <StackPanel x:Name="EAEPSectionList">
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock x:Name ="EAEPSelectedSectionDisplay" Style="{StaticResource FieldLabelSmall}">Aucune Rangée sélectionnée</TextBlock>
+                        <Grid Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" Margin="10,10,10,10">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="3*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0" Style="{StaticResource FieldLabelSmall}">Nom</TextBlock>
+                                    <TextBox x:Name="EAEPName" Grid.Row="1" Style="{StaticResource InputField}"></TextBox>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="3*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0" Style="{StaticResource FieldLabelSmall}">Code UPC</TextBlock>
+                                    <TextBox x:Name="EAEPCodeUpc" Grid.Row="1" Style="{StaticResource InputField}"></TextBox>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1" Margin="10,10,10,10">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="3*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0" Style="{StaticResource FieldLabelSmall}">Date D'expiration</TextBlock>
+                                    <DatePicker x:Name="EAEPDatePicker"  Grid.Row="1" Style="{StaticResource EmployeeDatePicker}" />
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="3*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0" Style="{StaticResource FieldLabelSmall}">Quantité</TextBlock>
+                                    <TextBox x:Name="EAEPQuantity" Grid.Row="1" Style="{StaticResource InputField}"></TextBox>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="2">
+                            <CheckBox x:Name="EAEPShelfStatus" IsThreeState="False" Style="{StaticResource EmployeeCheckBox}" Content="Produit en rayon" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"/>
+                        </Grid>
+                        <Button Grid.Row="3" Style="{StaticResource EmployeeAddButton}" Click="AddProduct" Height="40">Ajouter</Button>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+
+    </Grid>
+</Page>

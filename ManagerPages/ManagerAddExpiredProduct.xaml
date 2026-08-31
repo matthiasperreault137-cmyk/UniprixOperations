@@ -1,0 +1,138 @@
+﻿<Page x:Class="UniprixOperations.ManagerPages.ManagerAddExpiredProduct"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UniprixOperations.ManagerPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ManagerAddExpiredProduct">
+
+    <Grid Grid.Row="1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Background="White">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Button Style="{StaticResource ManagerUnselectedTab}" Click="OpenMainMenu">Accueil</Button>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Button Style="{StaticResource ManagerUnselectedTab}" Click="OpenTasks">Tâches</Button>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Button Style="{StaticResource ManagerSelectedTab}" Click="OpenExpiredProducts">Expirations</Button>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Button Style="{StaticResource ManagerUnselectedTab}" Click="OpenTaskHistory">Historique</Button>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Button Style="{StaticResource ManagerUnselectedTab}" Click="OpenUserMenu">Utilisateurs</Button>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock Style="{StaticResource PageTitle}"> Ajouter Un Produit Expiré</TextBlock>
+            </Grid>
+            <Border Grid.Row="1" Padding="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="1.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="5*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Style="{StaticResource Subtitle1}"> Sélectionner la rangée</TextBlock>
+                        <ScrollViewer Grid.Row="1">
+                            <StackPanel x:Name="MAEPSectionList">
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock x:Name ="MAEPSelectedSectionDisplay" Text="Aucune Rangée Sélectioné" Style="{StaticResource FieldLabelMedium}"></TextBlock>
+                        <Grid Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" Margin="10,10,10,10">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="3*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0" Style="{StaticResource FieldLabelSmall}">Nom :</TextBlock>
+                                    <TextBox x:Name="MAEPName" Grid.Row="1" Style="{StaticResource InputField}"></TextBox>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="3*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0" Style="{StaticResource FieldLabelSmall}">Code UPC :</TextBlock>
+                                    <TextBox x:Name="MAEPCodeUpc" Grid.Row="1" Style="{StaticResource InputField}"></TextBox>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1" Margin="10,10,10,10">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="3*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0" Style="{StaticResource FieldLabelSmall}">Date D'expiration :</TextBlock>
+                                    <DatePicker x:Name="MAEPDatePicker"  Grid.Row="1" Style="{StaticResource ManagerDatePicker}"/>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1*"/>
+                                        <RowDefinition Height="3*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0" Style="{StaticResource FieldLabelSmall}">Quantité :</TextBlock>
+                                    <TextBox x:Name="MAEPQuantity" Grid.Row="1" Style="{StaticResource InputField}"></TextBox>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="2">
+                            <CheckBox x:Name="MAEPShelfStatus" IsThreeState="False" Content="Produit en rayon" Style="{StaticResource ManagerCheckBox}" HorizontalAlignment="Center"/>
+                        </Grid>
+                        <Button Grid.Row="3" Style="{StaticResource ManagerAddButton}" Height="50" Click="AddProduct"> Ajouter</Button>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+
+    </Grid>
+</Page>
