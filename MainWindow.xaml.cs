@@ -94,5 +94,10 @@ namespace UniprixOperations
             }
 
         }
+
+        private void OpenEmployeeMessages(Object sender, RoutedEventArgs e)
+        {
+            Navigator.OpenEmployeeMessages();
+        }
     }
 }

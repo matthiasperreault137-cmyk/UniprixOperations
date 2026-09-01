@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         WindowState="Maximized"
         Title="MainWindow" Height="450" Width="800"
-        Icon="pack://application:,,,/Images/UniprixOperationsIcon.ico">    
+        Icon="pack://application:,,,/Images/UniprixOperationsIcon.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
@@ -37,5 +37,13 @@
             <Button Style="{StaticResource LogoutButton}" Width="176" HorizontalAlignment="Left" Click="openAccountSelection" Margin="10,10,0,10">Déconnexion</Button>
             <TextBlock x:Name="MWCurrentUser" Grid.Column="2" Text="Non connecté / Disconnected" HorizontalAlignment="Right" FontSize="20" VerticalAlignment="Center" Margin="0,0,40,0"></TextBlock>
         </Grid>
+
+        <!-- Overlay Canvas: place new UI elements anywhere with exact offsets -->
+        <Canvas Grid.Row="0" Grid.RowSpan="3">
+            <Button 
+            Canvas.Left="129" Canvas.Top="25" Width="5" Height="5"
+            Click="OpenEmployeeMessages"
+            Opacity="0"/>
+        </Canvas>
     </Grid>
 </Window>

@@ -3,23 +3,28 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 using UniprixOperations.HelperClasses;
 using UniprixOperations.MessageManagement;
-using UniprixOperations.PageData.ManagerPageData;
+using UniprixOperations.PageData.EmployeePageData;
 using UniprixOperations.UserManagement;
 using UniprixOperations.XmlDataManager;
 
-namespace UniprixOperations.ManagerPages
+namespace UniprixOperations.EmployeePages
 {
     /// <summary>
-    /// Logique d'interaction pour ManagerMessages.xaml
+    /// Interaction logic for EmployeeMessages.xaml
     /// </summary>
-    public partial class ManagerMessages : Page, IPageDef
+    public partial class EmployeeMessages : Page, IPageDef
     {
-        private ManagerMessagesData data;
-        public ManagerMessages(ManagerMessagesData data)
+        private EmployeeMessagesData data; //Change ts in the data
+        public EmployeeMessages(EmployeeMessagesData data)
         {
             InitializeComponent();
             this.data = data;
@@ -28,23 +33,15 @@ namespace UniprixOperations.ManagerPages
         //Side Bar Navigation Functions
         public void OpenMainMenu(Object sender, RoutedEventArgs e)
         {
-            Navigator.OpenManagerMainMenu();
+            Navigator.OpenEmployeeMainMenu();
         }
         public void OpenTasks(Object sender, RoutedEventArgs e)
         {
-            Navigator.OpenManagerTasks();
+            Navigator.OpenEmployeeTasks();
         }
         public void OpenExpiredProducts(Object sender, RoutedEventArgs e)
         {
-            Navigator.OpenManagerExpireMenu();
-        }
-        public void OpenTaskHistory(Object sender, RoutedEventArgs e)
-        {
-            Navigator.OpenTaskHistory();
-        }
-        public void OpenUserMenu(Object sender, RoutedEventArgs e)
-        {
-            Navigator.OpenUserMenu();
+            Navigator.OpenEmployeeAddExpiredProduct();
         }
 
 
@@ -93,15 +90,16 @@ namespace UniprixOperations.ManagerPages
 
         private void Load()
         {
-            MMMessages.Children.Clear();
-            for(int i = DataManager.Instance.Messages.MessageList.Count - 1; i>=0; i--)
+            EMMessages.Children.Clear();
+            for (int i = DataManager.Instance.Messages.MessageList.Count - 1; i >= 0; i--)
             {
                 Message m = DataManager.Instance.Messages.MessageList[i];
-                if (m.IsSecret == true)
+                if (m.IsSecret != true)
                 {
                     continue;
                 }
-                MMMessages.Children.Add(AddMessage(m));
+                EMMessages.Children.Add(AddMessage(m));
+                System.Diagnostics.Debug.WriteLine("message added: " + m.Content);
             }
         }
 
@@ -109,7 +107,7 @@ namespace UniprixOperations.ManagerPages
         private void DeleteMessages(Object sender, RoutedEventArgs e)
         {
             DataManager.Instance.Messages.MessageList.Clear();
-            Refresh();   
+            Refresh();
         }
 
         private void DeleteMesssage(Message message)
@@ -126,13 +124,13 @@ namespace UniprixOperations.ManagerPages
         }
         private void SendMessage()
         {
-            string content = MMMessageInput.Text;
+            string content = EMMessageInput.Text;
             if (!string.IsNullOrEmpty(content))
             {
                 User senderUser = UserStore.CurrentUser;
-                Message message = new Message(content, senderUser, null);
+                Message message = new Message(content, senderUser, true);
                 DataManager.Instance.Messages.MessageList.Add(message);
-                MMMessageInput.Text = "";
+                EMMessageInput.Text = "";
                 Refresh();
             }
         }
@@ -142,8 +140,8 @@ namespace UniprixOperations.ManagerPages
             {
                 if (Keyboard.Modifiers == ModifierKeys.Shift)
                 {
-                    MMMessageInput.Text += "\n";
-                    MMMessageInput.CaretIndex = MMMessageInput.Text.Length;
+                    EMMessageInput.Text += "\n";
+                    EMMessageInput.CaretIndex = EMMessageInput.Text.Length;
                 }
                 else
                 {

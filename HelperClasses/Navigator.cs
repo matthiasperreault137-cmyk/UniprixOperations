@@ -20,6 +20,8 @@ namespace UniprixOperations.HelperClasses
         private static EmployeeTasksData employeeTasksData;
         private static EmployeeAddExpiredProductData employeeAddExpiredProductData;
 
+        private static EmployeeMessagesData employeeMessagesData;
+
 
         //Manager Pages
 
@@ -170,6 +172,18 @@ namespace UniprixOperations.HelperClasses
         public static void OpenSectionList()
         {
             frame.NavigationService.Navigate(new SectionList(sectionListData));
+        }
+
+        public static void OpenEmployeeMessages()
+        {
+            if ((UserStore.CurrentUser != null) && (UserStore.CurrentUser.Name.ToLower() == "felix couture"))
+            {
+                frame.NavigationService.Navigate(new EmployeeMessages(employeeMessagesData));
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }
