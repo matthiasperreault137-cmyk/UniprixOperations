@@ -58,7 +58,7 @@ namespace UniprixOperations.ManagerPages
 
         //Loading
 
-        private Border AddMessage(Message message)
+        private Border AddMessage(Message message)      //Cleaned up the stale messages from old code
         {
             var border = new Border { Style = (Style)FindResource("MessageBorderStyle") };
 

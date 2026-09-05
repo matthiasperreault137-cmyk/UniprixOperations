@@ -18,7 +18,7 @@ namespace UniprixOperations.MessageManagement
         public User Sender { get; set; }
 
         [XmlElement("IsSecret")]
-        public bool? IsSecret { get; set; } = false;
+        public bool? IsSecret { get; set; } = false;  //Make sure old data can be read without issues
 
         public Message() { }
 
